@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 1em;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 5px;
@@ -38,7 +38,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 1em;
+
 }
 #gallery img {
     width: 30%;
@@ -47,18 +47,15 @@ body {
 }
 @media (max-width: 800px) {
     #gallery img {
-      width: 50%;
+      width: 100%;
+
   }
     #description{
-      width: 50%;
+      width: 100%;
   }
 }
 @media (max-width: 600px) {
     #gallery img {
-      width: 100%;
-  }
-    #description{
-      width: 100%;
-  }
-}  
-
+      width: 50%;
+    }
+}
