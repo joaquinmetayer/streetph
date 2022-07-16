@@ -5,27 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Street Photo Archives</title>
     <link rel="stylesheet" href="./styles.css">
-    <link href="./media/canon.png" rel="icon">
+    <link href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/325/camera_1f4f7.png" rel="icon">
   </head>
   <body>
-    <header>
-      <nav id="navbar">
-          <ul>
-            <li><a href="https://joaquinmetayer.github.io/personalweb/about.html" target="_blank">About me</a></li>
-            <li><a href="https://joaquinmetayer.github.io/personalweb/contact.html" target="_blank">Contact</a></li>
-            <li><a href="https://www.instagram.com/joaquinmetayer" target="_blank"><img id="instagram" src="./media/instagram.png"></li></a>
-          </ul>
-      </nav>
+    <div id="gallery">
       <div id="description">
-        <a href="https://joaquinmetayer.github.io/personalweb/index.html" target="_blank"><img id="me01" src="./media/me/03.jpg"></a>
-        <h2 id="title">Street Photo Arhives </h2>
+        <h2>Street Photo Arhives </h2>
+        <h3><a href="https://joaquinmetayer.github.io/personalweb/about.html" target="_blank"><strong>About me</strong></a>  <a href="https://joaquinmetayer.github.io/personalweb/contact.html" target="_blank"><strong>Contact</strong></a>  <a href="https://www.instagram.com/joaquinmetayer" target="_blank"><strong>Instagram</strong></a></h3>
         <p>This is a gallery of +400 street photos by <a href="https://joaquinmetayer.github.io/personalweb/index.html" target="_blank"><b>Joaquin Metayer</b></a> between the years 2016 and 2018 during my free time when I worked as a photographer in the city of Cordoba, Argentina.</p>
         <p>All images are uploaded in maximum quality, if you want to download one you just have to right click on it and open in a new window where you can download.</p>
-        <p><b>Enjoy it!</b></p>  
+        <p id="dark" ><a onclick="myFunction()"><b>Dark / Ligth mode clicking here.</b></a></p>
+        <p><b>Enjoy it!</b></p>
       </div>
-    </header>
-
-    <div id="gallery">
       <img src="./media/prim/00001H.jpg"/>
       <img src="./media/prim/00001V.jpg"/>
       <img src="./media/prim/00002H.jpg"/>
@@ -97,7 +88,6 @@
       <img src="./media/allphoto/V00027.jpg"/>
       <img src="./media/allphoto/H00028.jpg"/>
       <img src="./media/allphoto/V00028.jpg"/>
-      <img src="./media/allphoto/H00029.jpg"/>
       <img src="./media/allphoto/V00029.jpg"/>
       <img src="./media/allphoto/H00030.jpg"/>
       <img src="./media/allphoto/V00030.jpg"/>
@@ -116,7 +106,6 @@
       <img src="./media/allphoto/H00037.jpg"/>
       <img src="./media/allphoto/V00037.jpg"/>
       <img src="./media/allphoto/H00038.jpg"/>
-      <img src="./media/allphoto/V00038.jpg"/>
       <img src="./media/allphoto/H00039.jpg"/>
       <img src="./media/allphoto/V00039.jpg"/>
       <img src="./media/allphoto/H00040.jpg"/>
@@ -131,7 +120,6 @@
       <img src="./media/allphoto/V00044.jpg"/>
       <img src="./media/allphoto/H00045.jpg"/>
       <img src="./media/allphoto/V00045.jpg"/>
-      <img src="./media/allphoto/H00046.jpg"/>
       <img src="./media/allphoto/V00046.jpg"/>
       <img src="./media/allphoto/H00047.jpg"/>
       <img src="./media/allphoto/V00047.jpg"/>
@@ -446,8 +434,11 @@
       <img src="./media/allphoto/V00226.jpg"/>
       <img src="./media/allphoto/V00227.jpg"/>
     </div>
-    <footer>
-      <p><a href="#navbar">GOUP</a></p>
-    </footer>
+    <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script>
   </body>
 </html>

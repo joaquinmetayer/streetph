@@ -2,45 +2,36 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 5px;
-}
-#navbar{
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    width: 100vw;
-}
-#navbar > ul {
-    display: flex;
-    list-style: none;     
-}
-#navbar > ul > li > a{
-    display: inline-block;
-    padding: 0em 1em 1em 0em;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: bold; 
-    color: rgb(0, 0, 0);
-}
-#instagram{
-    width: 20px;
 }
 #description a{
     text-decoration: none;
     color: #000;
 }
-#me01{
-    border-radius: 50%;
-    width: 200px;
-    display: flex;
-    margin: 0 auto;
-    filter: grayscale(100);
+#description a :hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #000;
+}
+#description{
+    width: 30%;
+    object-fit:contain;
     padding: 1em;
 }
-#title{
-    text-align: center;
+#dark{
+    cursor: pointer;
+}
+.dark-mode #description a :hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+.dark-mode #description a{
+    color: white;
 }
 #gallery {
     display: flex;
@@ -54,31 +45,21 @@ body {
     object-fit:contain;
     padding: 1em;
 }
-#description{
-    height: 100vh;
-    max-width: 20em;
-    margin: auto;
-}
-footer{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 0.85em;
-    font-weight: bold;
-    padding: 2em;
-}
-footer > p > a {
-    color: rgb(0, 0, 0);
-}
 
 @media (max-width: 800px) {
     #gallery img {
       width: 50%;
   }
+  #description{
+    width: 50%;
+  }
 }
 @media (max-width: 600px) {
     #gallery img {
       width: 100%;
+  }
+  #description{
+    width: 100%;
   }
 }  
 
